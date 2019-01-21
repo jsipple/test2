@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Star Wars game</title>
+
+</head>
+<body>
+    <div id="game">
+    <section class="char pick" id="rancor">
+    <img class="character" src="./assets/images/Rancor.jpeg">
+    <p class="health" id="rancorHealth">500</p>
+    </section>
+    <section class="char pick" id="bobaFett">
+    <img class="character" src="./assets/images/Boba-Fett.jpeg">
+    <p class="health" id="boboFettHealth">200</p>
+    </section>
+    <section class="char pick" id="obiWan">
+    <img class="character" src="./assets/images/obi-wan.jpg">
+    <p class="health" id="obiWanHealth">250</p>
+    </section>
+    <section class="char pick" id="darthMaul">
+    <img class="character" src="./assets/images/Darth-Maul.jpeg">
+    <p class="health" id="darthMaulHealth">300</p>
+    </section>
+    </div>
+
+
+
+    <div id="instr">Choose a character to fight as:</div>
+    <div id="main-character">
+
+    </div>
+
+    <div id="button">
+        <button onclick="Attack()" id="fight">FIGHT</button>
+        <button id="restart" onclick="restart()">Restart</button>
+        <br>
+        <div id="results">
+
+        </div>
+    </div>
+    <div id="fighting">
+        
+    </div>
+<div id="themes">
+    <br>
+    <input class="tatooine" type="button" value="" onclick="changeTheme()">
+    <input type="button" value="" class="hanger" onclick="changeTheme2()">
+    <input type="button" value="" class="hoth" onclick="changeTheme3()">
+    </div>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+</html>
